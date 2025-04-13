@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.12.0 on win32)" generated="2025-04-13T20:26:32.704637" rpa="false" schemaversion="5">
-<suite id="s1" name="ApiTest" source="C:\School\semaster7\Development\Robot-Framework-Proof-of-Concept\Robot-Framework-Proof-of-Concept\tests\ApiTest.robot">
-<test id="s1-t1" name="Simple GET Request (zonder CSV)" line="10">
+<robot generator="Robot 7.2.2 (Python 3.12.0 on win32)" generated="2025-04-13T20:47:47.111087" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\School\semaster7\Development\Robot-Framework-Proof-of-Concept\Robot-Framework-Proof-of-Concept\tests">
+<suite id="s1-s1" name="ApiTest" source="C:\School\semaster7\Development\Robot-Framework-Proof-of-Concept\Robot-Framework-Proof-of-Concept\tests\ApiTest.robot">
+<test id="s1-s1-t1" name="Simple GET Request (zonder CSV)" line="10">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2025-04-13T20:26:32.934140" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2025-04-13T20:47:47.370742" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>jsonplaceholder</arg>
 <arg>${BASE_URL}</arg>
 <arg>verify=False</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2025-04-13T20:26:32.934140" elapsed="0.000000"/>
+<status status="PASS" start="2025-04-13T20:47:47.370742" elapsed="0.000000"/>
 </kw>
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2025-04-13T20:26:32.988068" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/posts/1 
+<msg time="2025-04-13T20:47:47.419822" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/posts/1 
  path_url=/posts/1 
  headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2025-04-13T20:26:32.988068" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/posts/1 
+<msg time="2025-04-13T20:47:47.419822" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/posts/1 
  status=200, reason=OK 
- headers={'Date': 'Sun, 13 Apr 2025 18:26:32 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1744440409&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=nSi5U0xrqtRTTLZghCNWfoT8bSXHpTR9lQZVNcN6pbM%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1744440409&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=nSi5U0xrqtRTTLZghCNWfoT8bSXHpTR9lQZVNcN6pbM%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1744440457', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '13178', 'Server': 'cloudflare', 'CF-RAY': '92fd03275e17fe93-AMS', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=9568&amp;min_rtt=9389&amp;rtt_var=3649&amp;sent=4&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=2841&amp;recv_bytes=785&amp;delivery_rate=311002&amp;cwnd=237&amp;unsent_bytes=0&amp;cid=546dfed1ce286dd4&amp;ts=23&amp;x=0"'} 
+ headers={'Date': 'Sun, 13 Apr 2025 18:47:46 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1744440409&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=nSi5U0xrqtRTTLZghCNWfoT8bSXHpTR9lQZVNcN6pbM%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1744440409&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=nSi5U0xrqtRTTLZghCNWfoT8bSXHpTR9lQZVNcN6pbM%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1744440457', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '14452', 'Server': 'cloudflare', 'CF-RAY': '92fd22444abc9f72-AMS', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=9863&amp;min_rtt=9853&amp;rtt_var=3715&amp;sent=4&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=2840&amp;recv_bytes=785&amp;delivery_rate=293940&amp;cwnd=248&amp;unsent_bytes=0&amp;cid=ab1b3a8452cb661b&amp;ts=25&amp;x=0"'} 
  body={
   "userId": 1,
   "id": 1,
@@ -26,39 +27,39 @@
   "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
 } 
  </msg>
-<msg time="2025-04-13T20:26:32.988068" level="INFO">C:\School\semaster7\Development\Robot-Framework-Proof-of-Concept\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2025-04-13T20:47:47.419822" level="INFO">C:\School\semaster7\Development\Robot-Framework-Proof-of-Concept\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2025-04-13T20:26:32.988068" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2025-04-13T20:47:47.419822" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>jsonplaceholder</arg>
 <arg>${ENDPOINT}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2025-04-13T20:26:32.934140" elapsed="0.053928"/>
+<status status="PASS" start="2025-04-13T20:47:47.371748" elapsed="0.048074"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
-<msg time="2025-04-13T20:26:32.988068" level="INFO">Argument types are:
+<msg time="2025-04-13T20:47:47.419822" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2025-04-13T20:26:32.988068" elapsed="0.000000"/>
+<status status="PASS" start="2025-04-13T20:47:47.419822" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-04-13T20:26:32.988068" level="INFO">✅ Statuscode is 200</msg>
+<msg time="2025-04-13T20:47:47.419822" level="INFO">✅ Statuscode is 200</msg>
 <arg>✅ Statuscode is 200</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-13T20:26:32.988068" elapsed="0.000000"/>
+<status status="PASS" start="2025-04-13T20:47:47.419822" elapsed="0.000000"/>
 </kw>
 <kw name="Convert To Dictionary" owner="Collections">
-<msg time="2025-04-13T20:26:32.988068" level="INFO">${json} = {'userId': 1, 'id': 1, 'title': 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit', 'body': 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit...</msg>
+<msg time="2025-04-13T20:47:47.419822" level="INFO">${json} = {'userId': 1, 'id': 1, 'title': 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit', 'body': 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit...</msg>
 <var>${json}</var>
 <arg>${response.json()}</arg>
 <doc>Converts the given ``item`` to a Python ``dict`` type.</doc>
-<status status="PASS" start="2025-04-13T20:26:32.988068" elapsed="0.000000"/>
+<status status="PASS" start="2025-04-13T20:47:47.419822" elapsed="0.000000"/>
 </kw>
 <kw name="Log Dictionary" owner="Collections">
-<msg time="2025-04-13T20:26:32.988068" level="INFO">Dictionary size is 4 and it contains following items:
+<msg time="2025-04-13T20:47:47.419822" level="INFO">Dictionary size is 4 and it contains following items:
 body: quia et suscipit
 suscipit recusandae consequuntur expedita et cum
 reprehenderit molestiae ut ut quas totam
@@ -68,41 +69,135 @@ title: sunt aut facere repellat provident occaecati excepturi optio reprehenderi
 userId: 1</msg>
 <arg>${json}</arg>
 <doc>Logs the size and contents of the ``dictionary`` using given ``level``.</doc>
-<status status="PASS" start="2025-04-13T20:26:32.988068" elapsed="0.000000"/>
+<status status="PASS" start="2025-04-13T20:47:47.419822" elapsed="0.000000"/>
 </kw>
 <kw name="Dictionary Should Contain Key" owner="Collections">
 <arg>${json}</arg>
 <arg>userId</arg>
 <doc>Fails if ``key`` is not found from ``dictionary``.</doc>
-<status status="PASS" start="2025-04-13T20:26:32.988068" elapsed="0.000000"/>
+<status status="PASS" start="2025-04-13T20:47:47.419822" elapsed="0.000000"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
-<msg time="2025-04-13T20:26:32.988068" level="INFO">Argument types are:
+<msg time="2025-04-13T20:47:47.419822" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${json['userId']}</arg>
 <arg>1</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2025-04-13T20:26:32.988068" elapsed="0.000000"/>
+<status status="PASS" start="2025-04-13T20:47:47.419822" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-04-13T20:26:33.000850" level="INFO">✅ API responded correct met userId 1</msg>
+<msg time="2025-04-13T20:47:47.419822" level="INFO">✅ API responded correct met userId 1</msg>
 <arg>✅ API responded correct met userId 1</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-13T20:26:33.000850" elapsed="0.000000"/>
+<status status="PASS" start="2025-04-13T20:47:47.419822" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-04-13T20:26:32.934140" elapsed="0.066710"/>
+<status status="PASS" start="2025-04-13T20:47:47.370742" elapsed="0.049080"/>
 </test>
-<status status="PASS" start="2025-04-13T20:26:32.705669" elapsed="0.295869"/>
+<status status="PASS" start="2025-04-13T20:47:47.113555" elapsed="0.306267"/>
+</suite>
+<suite id="s1-s2" name="WebTest" source="C:\School\semaster7\Development\Robot-Framework-Proof-of-Concept\Robot-Framework-Proof-of-Concept\tests\WebTest.robot">
+<test id="s1-s2-t1" name="Valid Login Test" line="10">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-04-13T20:47:47.639744" level="INFO">${chrome options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001A995E7D700&gt;</msg>
+<var>${chrome options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-04-13T20:47:47.639744" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome options}</arg>
+<arg>add_argument</arg>
+<arg>--headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2025-04-13T20:47:47.639744" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2025-04-13T20:47:47.639744" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2025-04-13T20:47:47.639744" elapsed="0.000000"/>
+</kw>
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-04-13T20:47:47.639744" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<arg>options=${chrome options}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2025-04-13T20:47:47.639744" elapsed="1.163538"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-04-13T20:47:48.803282" level="INFO">Opening url 'http://the-internet.herokuapp.com/login'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-04-13T20:47:48.803282" elapsed="3.197553"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-13T20:47:52.001834" elapsed="0.011001"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-13T20:47:52.013835" level="INFO">Typing text 'tomsmith' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-13T20:47:52.013835" elapsed="0.044177"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-13T20:47:52.058012" level="INFO">Typing text 'SuperSecretPassword!' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-13T20:47:52.058012" elapsed="0.038067"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-13T20:47:52.097078" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<arg>xpath=//button[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-13T20:47:52.097078" elapsed="0.284057"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Secure Area</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-04-13T20:47:52.381135" elapsed="0.008096"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-13T20:47:53.389251" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-13T20:47:52.389231" elapsed="1.000020"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-13T20:47:53.389251" elapsed="2.068485"/>
+</kw>
+<status status="PASS" start="2025-04-13T20:47:47.639744" elapsed="7.818992"/>
+</test>
+<status status="PASS" start="2025-04-13T20:47:47.419822" elapsed="8.038914"/>
+</suite>
+<status status="PASS" start="2025-04-13T20:47:47.111087" elapsed="8.347649"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="ApiTest" id="s1" pass="1" fail="0" skip="0">ApiTest</stat>
+<stat name="Tests" id="s1" pass="2" fail="0" skip="0">Tests</stat>
+<stat name="ApiTest" id="s1-s1" pass="1" fail="0" skip="0">Tests.ApiTest</stat>
+<stat name="WebTest" id="s1-s2" pass="1" fail="0" skip="0">Tests.WebTest</stat>
 </suite>
 </statistics>
 <errors>
