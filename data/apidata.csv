@@ -1,0 +1,2 @@
+endpoint,expected_text
+/posts/1,"\"userId\": 1"
