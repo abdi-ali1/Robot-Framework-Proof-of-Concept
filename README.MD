@@ -11,7 +11,7 @@ Dit project is bedoeld als basisopzet voor testautomatisering binnen kleine tot 
 ---
 
 ## 📁 Structuur van het project
-
+```bash
 Robot-Framework-Proof-of-Concept/
 │
 ├── .github/
@@ -30,7 +30,7 @@ Robot-Framework-Proof-of-Concept/
 ├── README.md                      ← uitleg + run instructies
 │
 ├── requirements.txt              ← alle pip dependencies
----
+```
 
 ## 🔧 Installatie
 

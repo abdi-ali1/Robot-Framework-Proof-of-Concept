@@ -1,0 +1,38 @@
+name: Run Robot Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: 🤖 Run Robot Framework Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v3
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 📦 Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 🚀 Run Robot Framework tests
+        run: |
+          robot --outputdir output tests/
+
+      - name: 📤 Upload Robot Framework reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: robot-results
+          path: output/
